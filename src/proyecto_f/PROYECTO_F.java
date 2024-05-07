@@ -4,6 +4,7 @@
  */
 package proyecto_f;
 
+import controllers.LoginController;
 import java.io.IOException;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -29,43 +30,19 @@ import javafx.scene.text.Font;
  */
 public class PROYECTO_F extends Application {
 
+      
     @Override
-    public void start(Stage primaryStage) {
-
-        Label labelTitulo = new Label("LOGIN");
-        labelTitulo.setFont(new Font(30));
-        
-        Label labelUsuario = new Label("USUARIO");
-        labelUsuario.setFont(new Font(15));
-        
-        Label labelContraseña = new Label("CONTRASEÑA");
-        labelContraseña.setFont(new Font(15));
-
-        TextField textUsuario = new TextField();
-        textUsuario.setMaxWidth(150);
-        
-        PasswordField textcontraseña = new PasswordField();
-        textcontraseña.setMaxWidth(150);
-
-        Button btnlogin = new Button("ENTRAR");
-        btnlogin.setMaxWidth(150);
-        btnlogin.setCursor(Cursor.HAND);
+    public void start(Stage primaryStage) throws IOException {
         
         
-        VBox root = new VBox();
-        root.getChildren().addAll(labelTitulo,labelUsuario,textUsuario,labelContraseña,textcontraseña,btnlogin);
-        root.setAlignment(Pos.CENTER);
-
-
-        
-
-        Scene scene = new Scene(root, 300, 250);
-        primaryStage.setTitle("TECNOLOGY UNLIMITED");
-
-        primaryStage.setScene(scene);
-        primaryStage.show();
+       FXMLLoader loader  = new FXMLLoader(getClass().getResource("/views/login.fxml"));
+       Parent root = loader.load();
+       Scene scene = new Scene(root);
+       primaryStage.setScene(scene);
+       LoginController controller = loader.getController();
+       controller.setStage(primaryStage);
+       primaryStage.show();
     }
-
     public static void main(String[] args) {
         launch(args);
     }
