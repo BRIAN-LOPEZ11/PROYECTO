@@ -52,5 +52,9 @@ public class LoginController implements Initializable {
     public void setStage(Stage primaryStage) {
         stage = primaryStage;
     }
+
+    void show() {
+        stage.show();
+    }
     
 }
