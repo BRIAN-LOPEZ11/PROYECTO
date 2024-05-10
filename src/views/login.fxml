@@ -33,13 +33,16 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="113.0" layoutY="513.0" text="¿No tienes cuenta?Registrate">
+      <Label layoutX="113.0" layoutY="513.0" onMouseClicked="#viewregistro" text="¿No tienes cuenta?Registrate">
          <font>
             <Font size="11.0" />
          </font>
          <effect>
             <Blend />
          </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Label>
       <Label layoutX="209.0" layoutY="409.0" text="¿Olvidaste tu contraseña?">
          <opaqueInsets>

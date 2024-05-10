@@ -6,7 +6,11 @@ package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -14,6 +18,10 @@ import javafx.fxml.Initializable;
  * @author Brian
  */
 public class PlaystationController implements Initializable {
+    CarritoController controllerwindow1;
+    Stage stage;
+    @FXML
+    private Label txtuser;
 
     /**
      * Initializes the controller class.
@@ -22,5 +30,17 @@ public class PlaystationController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    void init(String text, Stage stage, CarritoController CarritoController) {
+        txtuser.setText(text);
+        this.controllerwindow1 = CarritoController;
+        this.stage = stage;
+    }
+
+    @FXML
+    private void viewcarrito(MouseEvent event) {
+        controllerwindow1.show();
+        stage.close();
+    }
     
 }

@@ -6,11 +6,11 @@ package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -18,13 +18,15 @@ import javafx.stage.Stage;
  *
  * @author Brian
  */
-public class LaptopController implements Initializable {
+public class RegistroController implements Initializable {
 
     @FXML
-    private ImageView regreso;
+    private TextField txfusuario;
     @FXML
-    private Label txtuser;
-    CarritoController controllerwindow1;
+    private TextField txfcorreo;
+    @FXML
+    private PasswordField pswcontraseña;
+    LoginController controllerwindow1;
     Stage stage;
 
     /**
@@ -34,18 +36,21 @@ public class LaptopController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    void init(String text, Stage stage, LoginController LoginController) {
+        
+        this.controllerwindow1 = LoginController;
+        this.stage = stage;
+        
+        
+    }
 
     @FXML
-    private void viewcarrito(MouseEvent event) {
+    
+    private void showWindow1(ActionEvent event) {
         controllerwindow1.show();
         stage.close();
     }
-
-    void init(String text, Stage stage, CarritoController CarritoController) {
-        txtuser.setText(text);
-        this.controllerwindow1 = CarritoController;
-        this.stage = stage;
     
-    }
     
 }

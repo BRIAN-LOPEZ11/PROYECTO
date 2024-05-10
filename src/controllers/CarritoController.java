@@ -52,6 +52,9 @@ public class CarritoController implements Initializable {
         controllerwindow1.show();
         stage.close();
     }
+    void show() {
+        stage.show();
+    }
 
     void init(String text, Stage stage, LoginController LoginController) {
         lbluser.setText(text);
@@ -70,6 +73,7 @@ public class CarritoController implements Initializable {
        Scene scene = new Scene(root);
        Stage stage = new Stage();
        stage.setScene(scene);
+      controller.init(lbluser.getText(), stage, this);
        stage.show();
        this.stage.close();
         
@@ -84,6 +88,7 @@ public class CarritoController implements Initializable {
        Scene scene = new Scene(root);
        Stage stage = new Stage();
        stage.setScene(scene);
+       controller.init(lbluser.getText(), stage, this);
        stage.show();
        this.stage.close();
     }
@@ -97,6 +102,7 @@ public class CarritoController implements Initializable {
        Scene scene = new Scene(root);
        Stage stage = new Stage();
        stage.setScene(scene);
+       controller.init(lbluser.getText(), stage, this);
        stage.show();
        this.stage.close();
     }
@@ -110,6 +116,7 @@ public class CarritoController implements Initializable {
        Scene scene = new Scene(root);
        Stage stage = new Stage();
        stage.setScene(scene);
+       controller.init(lbluser.getText(), stage, this);
        stage.show();
        this.stage.close();
     }

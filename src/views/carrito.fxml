@@ -46,13 +46,16 @@
          <effect>
             <ColorAdjust saturation="-0.54" />
          </effect></ImageView>
-      <ImageView fx:id="imgvauriculares" fitHeight="162.0" fitWidth="177.0" layoutX="233.0" layoutY="104.0" pickOnBounds="true">
+      <ImageView fx:id="imgvauriculares" fitHeight="162.0" fitWidth="177.0" layoutX="233.0" layoutY="104.0" onMouseClicked="#viewventanaopenear" pickOnBounds="true">
          <image>
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2000.08.30_25211610.jpg" />
          </image>
          <effect>
             <ColorAdjust saturation="-0.55" />
          </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
       <Label layoutX="51.0" layoutY="272.0" text="Samsung Galaxy A05" />
       <Label layoutX="247.0" layoutY="272.0" text="Open-ear A70" />

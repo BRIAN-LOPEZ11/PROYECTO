@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LaptopController">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="366.0" style="-fx-background-color: cyan;">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="391.0" style="-fx-background-color: cyan;">
          <children>
-            <ImageView fitHeight="79.0" fitWidth="366.0" layoutX="146.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="103.0" fitWidth="240.0" layoutX="141.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/WhatsApp%20Image%202024-05-09%20at%2011.24.44%20AM.jpeg" />
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2000.16.42_01dabf6a.jpg" />
                </image></ImageView>
-            <Label layoutX="112.0" layoutY="113.0" prefHeight="22.0" prefWidth="142.0" text="HP Envy Laptop">
+            <Label layoutX="120.0" layoutY="113.0" prefHeight="22.0" prefWidth="142.0" text="HP Envy Laptop">
                <font>
                   <Font name="Arial Rounded MT Bold" size="18.0" />
                </font>
             </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="216.0" fitWidth="285.0" layoutX="54.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/con-nb-pappy-22c1-hp-envy-17-cr0000-product-image.png" />
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2000.08.31_19f6316c.jpg" />
                </image>
             </ImageView>
             <Label layoutX="66.0" layoutY="328.0" prefHeight="17.0" prefWidth="111.0" text="Caracteristicas">
@@ -35,22 +35,58 @@
             <Label layoutX="66.0" layoutY="388.0" prefHeight="17.0" prefWidth="260.0" text=" ● 6 GB de RAM DDR4 de 3200 MHz(2 x 8 GB)" />
             <Label layoutX="66.0" layoutY="414.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Lector de tarjetas digitales multiformato HP" />
             <Label layoutX="66.0" layoutY="440.0" prefHeight="17.0" prefWidth="271.0" text=" ● Adaptador de alimentación de CA de 65 W, USB Tipo C" />
-            <Separator layoutY="484.0" prefHeight="1.0" prefWidth="352.0" />
-            <Separator layoutX="109.0" layoutY="487.0" orientation="VERTICAL" prefHeight="70.0" prefWidth="5.0" />
-            <Separator layoutX="241.0" layoutY="487.0" orientation="VERTICAL" prefHeight="70.0" prefWidth="6.0" />
-            <ImageView fitHeight="70.0" fitWidth="103.0" layoutX="29.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="39.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/inicio.png" />
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c578ce0e.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="70.0" fitWidth="123.0" layoutX="138.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="41.0" fitWidth="59.0" layoutX="169.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/perfil.png" />
-               </image></ImageView>
-            <ImageView fitHeight="70.0" fitWidth="123.0" layoutX="273.0" layoutY="485.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c7da5c95.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust saturation="1.0" />
+               </effect></ImageView>
+            <ImageView fitHeight="41.0" fitWidth="45.0" layoutX="304.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/carrito.png" />
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_f364a62d.jpg" />
                </image></ImageView>
-            <Button layoutX="40.0" layoutY="40.0" mnemonicParsing="false" text="VOLVER" />
+            <ImageView fx:id="regreso" fitHeight="62.0" fitWidth="59.0" layoutY="8.0" onMouseClicked="#viewcarrito" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.03.49_7bccd081.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="4.0" fitWidth="391.0" layoutY="494.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust contrast="-0.73" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="93.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
+               <image>
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust contrast="-0.8" hue="0.99" saturation="0.31" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="228.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
+               <image>
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust contrast="-0.8" hue="0.99" saturation="0.31" />
+               </effect>
+            </ImageView>
+            <Label fx:id="txtuser" layoutX="271.0" layoutY="83.0" prefHeight="17.0" prefWidth="111.0" text="USER">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="13.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

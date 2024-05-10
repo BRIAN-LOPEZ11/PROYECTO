@@ -13,7 +13,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -26,6 +30,12 @@ public class LoginController implements Initializable {
 
     @FXML
     private TextField txtuser;
+    @FXML
+    private AnchorPane mine;
+    @FXML
+    private PasswordField txtcontra;
+    @FXML
+    private Button btnlogin;
 
     /**
      * Initializes the controller class.
@@ -55,6 +65,20 @@ public class LoginController implements Initializable {
 
     void show() {
         stage.show();
+    }
+
+    @FXML
+    private void viewregistro(MouseEvent event) throws IOException {
+        FXMLLoader loader  = new FXMLLoader(getClass().getResource("/views/registro.fxml"));
+       Parent root = loader.load();
+       
+       RegistroController controller = loader.getController();
+       Scene scene = new Scene(root);
+       Stage stage = new Stage();
+       stage.setScene(scene);
+        controller.init(txtuser.getText(), stage, this);
+       stage.show();
+       this.stage.close();
     }
     
 }
