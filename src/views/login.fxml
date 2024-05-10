@@ -55,7 +55,7 @@
       <Ellipse layoutX="183.0" layoutY="14.0" radiusX="182.0" radiusY="192.0" stroke="BLACK" strokeType="INSIDE" />
       <ImageView fitHeight="164.0" fitWidth="236.0" layoutX="66.0" layoutY="-7.0" pickOnBounds="true">
          <image>
-            <Image url="@../image/imgenproyecto.png" />
+            <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-09%20a%20las%2018.51.04_9c1cfde0.jpg" />
          </image>
          <effect>
             <ColorAdjust brightness="-0.12" contrast="1.0" />
