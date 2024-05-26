@@ -69,10 +69,10 @@ public class LoginController implements Initializable {
 
     @FXML
     private void viewregistro(MouseEvent event) throws IOException {
-        FXMLLoader loader  = new FXMLLoader(getClass().getResource("/views/registro.fxml"));
+        FXMLLoader loader  = new FXMLLoader(getClass().getResource("/views/RegistroSB.fxml"));
        Parent root = loader.load();
        
-       RegistroController controller = loader.getController();
+       RegistroSBController controller = loader.getController();
        Scene scene = new Scene(root);
        Stage stage = new Stage();
        stage.setScene(scene);
