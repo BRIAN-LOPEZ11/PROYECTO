@@ -6,6 +6,7 @@ package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -18,6 +19,7 @@ import javafx.stage.Stage;
  * @author Brian
  */
 public class OpenearController implements Initializable {
+
     CarritoController controllerwindow1;
     Stage stage;
     @FXML
@@ -29,18 +31,18 @@ public class OpenearController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
-    void init(String text, Stage stage, CarritoController CarritoController ) {
+    void init(String text, Stage stage, CarritoController CarritoController) {
         txtuser.setText(text);
         this.controllerwindow1 = CarritoController;
         this.stage = stage;
     }
 
     @FXML
-    private void viewcarrito(MouseEvent event) {
+    private void viewcompra(MouseEvent event) {
         controllerwindow1.show();
         stage.close();
     }
-    
+
 }

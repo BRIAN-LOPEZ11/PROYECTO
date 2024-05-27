@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -25,15 +27,15 @@
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="323.0" prefHeight="17.0" prefWidth="160.0" text="Caracteristicas">
+      <Label layoutX="39.0" layoutY="361.0" prefHeight="17.0" prefWidth="160.0" text="Caracteristicas">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="357.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Modo manos libres incluido" />
-      <Label layoutX="53.0" layoutY="381.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Asistencia de voz integrado (SIRI)" />
-      <Label layoutX="53.0" layoutY="406.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Micrófono incorporado" />
-      <Label layoutX="53.0" layoutY="433.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Sonido superior y sin limites" />
+      <Label layoutX="38.0" layoutY="382.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Modo manos libres incluido" />
+      <Label layoutX="38.0" layoutY="406.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Asistencia de voz integrado (SIRI)" />
+      <Label layoutX="38.0" layoutY="431.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Micrófono incorporado" />
+      <Label layoutX="38.0" layoutY="458.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Sonido superior y sin limites" />
       <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="39.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c578ce0e.jpg" />
@@ -49,7 +51,7 @@
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_f364a62d.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="59.0" layoutY="8.0" onMouseClicked="#viewcarrito" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="62.0" fitWidth="59.0" layoutY="8.0" onMouseClicked="#viewcompra" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.03.49_7bccd081.jpg" />
          </image>
@@ -85,6 +87,22 @@
          <font>
             <Font size="15.0" />
          </font>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="92.0" layoutX="39.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Imágenes/set-star-ratings-review-flat-icons-for-apps-and-websites-illustration-of-five-golden-yellow-stars-in-a-row-isolated-in-a-white-background-concepts-for-ratings-opinion-free-vector-Photoroom.png-Photoroom%20(2).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="243.0" layoutY="314.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: orange; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="Agregar al carrito" />
+      <Label layoutX="47.0" layoutY="336.0" text="\$US130">
+         <effect>
+            <Blend />
+         </effect>
+      </Label>
+      <Label layoutX="131.0" layoutY="319.0" text="3.0">
+         <effect>
+            <Blend />
+         </effect>
       </Label>
    </children>
 </AnchorPane>

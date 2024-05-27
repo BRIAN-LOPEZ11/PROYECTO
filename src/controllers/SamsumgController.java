@@ -6,6 +6,7 @@ package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -19,7 +20,6 @@ import javafx.stage.Stage;
  */
 public class SamsumgController implements Initializable {
 
-    
     CarritoController controllerwindow1;
     Stage stage;
     @FXML
@@ -44,5 +44,6 @@ public class SamsumgController implements Initializable {
         this.controllerwindow1 = CarritoController;
         this.stage = stage;
     }
+
 
 }
