@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -55,7 +54,7 @@
       <PasswordField layoutX="38.0" layoutY="437.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 12px;" />
       <ImageView fitHeight="157.0" fitWidth="160.0" layoutX="102.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: cyan;">
          <image>
-            <Image url="@../../../../../Downloads/default-avatar-profile-icon-of-social-media-user-vector-Photoroom.png-Photoroom.png" />
+            <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-27%20a%20las%2015.49.03_4212e865.jpg" />
          </image>
       </ImageView>
       <Label layoutX="151.0" layoutY="43.0" prefHeight="17.0" prefWidth="71.0" text="Perfil">
@@ -63,44 +62,5 @@
             <Font name="Arial Rounded MT Bold" size="24.0" />
          </font>
       </Label>
-      <ImageView fitHeight="41.0" fitWidth="59.0" layoutX="168.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Downloads/PROYECTO-master/src/images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c7da5c95.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="41.0" fitWidth="45.0" layoutX="291.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Downloads/PROYECTO-master/src/images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_f364a62d.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="93.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
-         <image>
-            <Image url="@../../../../../Downloads/PROYECTO-master/src/images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
-         </image>
-         <effect>
-            <ColorAdjust contrast="-0.73" />
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="4.0" fitWidth="368.0" layoutY="494.0" pickOnBounds="true">
-         <image>
-            <Image url="@../../../../../Downloads/PROYECTO-master/src/images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
-         </image>
-         <effect>
-            <ColorAdjust contrast="-0.73" />
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="228.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
-         <image>
-            <Image url="@../../../../../Downloads/PROYECTO-master/src/images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
-         </image>
-         <effect>
-            <ColorAdjust contrast="-0.73" />
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="39.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Downloads/PROYECTO-master/src/images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c578ce0e.jpg" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>
