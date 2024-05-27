@@ -14,8 +14,8 @@ public class nodo {
 
     public nodo(String nombre, String contra, String correo) {
         this.nombre = nombre;
-        this.contra = contra;
         this.correo = correo;
+        this.contra = contra;
         sig = null;
     }
     

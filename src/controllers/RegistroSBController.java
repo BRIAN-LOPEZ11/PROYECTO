@@ -6,11 +6,14 @@ package controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import listas.*;
 
 /**
  * FXML Controller class
@@ -24,9 +27,16 @@ public class RegistroSBController implements Initializable {
     @FXML
     private TextField txtuser;
     @FXML
-    private TextField txtuser1;
+    private TextField txtcorreo;
     @FXML
-    private TextField txtuser11;
+    private PasswordField txtcontraseña;
+    
+    
+    
+    
+       
+        
+    
 
     /**
      * Initializes the controller class.
@@ -48,6 +58,12 @@ public class RegistroSBController implements Initializable {
     private void showlogin(MouseEvent event) {
         controllerwindow1.show();
         stage.close();
+    }
+
+    @FXML
+    private void RegistrarUser(ActionEvent event) {
+       
+        
     }
 
 }

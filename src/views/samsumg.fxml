@@ -86,7 +86,7 @@
             </Label>
             <ImageView fitHeight="41.0" fitWidth="92.0" layoutX="56.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../OneDrive/Imágenes/set-star-ratings-review-flat-icons-for-apps-and-websites-illustration-of-five-golden-yellow-stars-in-a-row-isolated-in-a-white-background-concepts-for-ratings-opinion-free-vector-Photoroom.png-Photoroom%20(1).png" />
+                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-27%20a%20las%2015.49.03_80e93e68.jpg" />
                </image>
             </ImageView>
             <Label layoutX="148.0" layoutY="319.0" text="4.0">
