@@ -45,17 +45,17 @@
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="txtuser1" layoutX="60.0" layoutY="269.0" prefHeight="25.0" prefWidth="175.0" promptText="Tu genero" style="-fx-border-radius: 12px; -fx-background-radius: 12px;">
+      <TextField layoutX="60.0" layoutY="269.0" prefHeight="25.0" prefWidth="175.0" promptText="Tu genero" style="-fx-border-radius: 12px; -fx-background-radius: 12px;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="txtuser11" layoutX="60.0" layoutY="332.0" prefHeight="25.0" prefWidth="175.0" promptText="Tucorreo@gmail.com" style="-fx-border-radius: 12px; -fx-background-radius: 12px;">
+      <TextField fx:id="txtcorreo" layoutX="60.0" layoutY="332.0" prefHeight="25.0" prefWidth="175.0" promptText="Tucorreo@gmail.com" style="-fx-border-radius: 12px; -fx-background-radius: 12px;">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <PasswordField layoutX="60.0" layoutY="403.0" prefHeight="25.0" prefWidth="175.0" promptText="**********************" style="-fx-background-radius: 12px;" />
+      <PasswordField fx:id="txtcontraseña" layoutX="60.0" layoutY="403.0" prefHeight="25.0" prefWidth="175.0" promptText="**********************" style="-fx-background-radius: 12px;" />
       <Label layoutX="45.0" layoutY="101.0" prefHeight="28.0" prefWidth="130.0" text="Registro">
          <font>
             <Font name="Arial Rounded MT Bold" size="24.0" />

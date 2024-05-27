@@ -15,7 +15,10 @@
          <effect>
             <Blend />
          </effect></Label>
-      <Button layoutX="342.0" layoutY="522.0" mnemonicParsing="false" onAction="#showWindow1" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: BLACK; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="SALIR" />
+      <Button layoutX="342.0" layoutY="522.0" mnemonicParsing="false" onAction="#showWindow1" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: BLACK; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="SALIR">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <ImageView fx:id="imgvsamsumg" fitHeight="159.0" fitWidth="167.0" layoutX="42.0" layoutY="105.0" onMouseClicked="#viewventanasamsumg" pickOnBounds="true">
          <image>
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2000.08.30_60861bb0.jpg" />

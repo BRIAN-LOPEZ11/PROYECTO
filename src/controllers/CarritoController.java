@@ -33,9 +33,11 @@ public class CarritoController implements Initializable {
     @FXML
     private ImageView imgvsamsumg;
     @FXML
-    private ImageView imgvopenear;
-    @FXML
     private ImageView imgvlaptop;
+    @FXML
+    private ImageView imgvplaystation;
+    @FXML
+    private ImageView imgvauriculares;
 
     /**
      * Initializes the controller class.
