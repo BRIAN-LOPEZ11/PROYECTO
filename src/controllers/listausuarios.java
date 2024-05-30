@@ -46,6 +46,22 @@ public class listausuarios {
             return cont;
         }
     }
+      public nodo getBuscarcorreo(String txtcorreo) {
+        if (getEsVacia()) {
+            return null;
+        } else {
+            nodo p = cab;
+            while (p != null) {
+                if (p.correo.equalsIgnoreCase(txtcorreo)) {
+
+                    return p;
+                } else {
+                    p = p.sig;
+                }
+            }
+            return null;
+        }
+    }
      
 
 }
