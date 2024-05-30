@@ -90,7 +90,7 @@ public class SamsumgController implements Initializable {
             if (n == 0) {
                 JOptionPane.showMessageDialog(null, "NO SE AÑADIERON ARTÍCULOS");
             } else {
-                 pagosamsumg = n * 100;
+                 pagosamsumg = n * 200;
                  
                  comprass.info.setPsamsumg(pagosamsumg);
 
