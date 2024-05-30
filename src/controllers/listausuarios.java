@@ -62,6 +62,37 @@ public class listausuarios {
             return null;
         }
     }
+      public boolean getCrearNodo(
+            TextField txtuser,
+            TextField txtcorreo,
+            PasswordField txtcontraseña
+    ) {
+        nodo b = null;
+        info = null;
+        try {
+            b = getBuscarcorreo(txtcorreo.getText());
+            if (b != null) {
+                JOptionPane.showMessageDialog(null,
+                        "Este correo ya ha sido registrado");
+                txtcorreo.setText("");
+                txtcorreo.requestFocus();
+            } else {
+                info = new nodo(
+                        txtuser.getText(),
+                        txtcorreo.getText(),
+                        txtcontraseña.getText()
+                );
+                JOptionPane.showMessageDialog(null,
+                        "USUARIO REGISTRADO");
+            }
+            return true;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: " + e + ". NO SE HA REGISTRADO NINGÚN USUARIO");
+            info = null;
+            return false;
+        }
+    }
      
 
 }
