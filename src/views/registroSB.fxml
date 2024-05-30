@@ -62,6 +62,12 @@
             <Font name="Arial Rounded MT Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="149.0" layoutY="467.0" mnemonicParsing="false" onAction="#RegistrarUser" text="Button" />
+      <Button layoutX="132.0" layoutY="469.0" mnemonicParsing="false" onAction="#RegistrarUser" prefHeight="28.0" prefWidth="103.0" style="-fx-background-color: BLACK; -fx-text-fill: WHITE; -fx-border-radius: 10px; -fx-background-radius: 10px;" text="Registrar">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
    </children>
 </AnchorPane>

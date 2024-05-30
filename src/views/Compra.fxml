@@ -38,6 +38,9 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="170.0" layoutY="445.0" mnemonicParsing="false" onAction="#mostrarcompras" text="Button" />
+      <Button layoutX="102.0" layoutY="434.0" mnemonicParsing="false" onAction="#mostrarcompras" prefHeight="40.0" prefWidth="187.0" style="-fx-background-color: orange; -fx-text-fill: black; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="FINALIZAR COMPRA">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
    </children>
 </AnchorPane>
