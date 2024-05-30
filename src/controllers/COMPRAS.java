@@ -23,6 +23,7 @@ public class COMPRAS  {
     }
     
     
+    
 
     public int getPsamsumg() {
         return psamsumg;

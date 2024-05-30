@@ -22,7 +22,8 @@ import javax.swing.JOptionPane;
  */
 public class CompraController implements Initializable {
 
-  COMPRAS compraf;
+    listacompras comprass = listacompras.obtenerListaCompra();
+  
     CarritoController controllerwindow1;
     Stage stage;
     @FXML
@@ -52,7 +53,8 @@ public class CompraController implements Initializable {
 
     @FXML
     private void mostrarcompras(ActionEvent event) {
-        JOptionPane.showMessageDialog(null, "OPENEAR: "+compraf.getPopenear()+"\n SAMSUMG: "+compraf.getPsamsumg());
+        
+        JOptionPane.showMessageDialog(null, "OPENEAR: "+comprass.info.getPopenear()+"\n SAMSUMG: "+comprass.info.getPsamsumg()+"\n PLAYSTATION: "+"\n LAPTOP: ");
     }
     
     

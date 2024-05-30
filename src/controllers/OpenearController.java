@@ -25,7 +25,7 @@ import javax.swing.JOptionPane;
  */
 public class OpenearController implements Initializable {
     
-    COMPRAS compraf = new COMPRAS(0,0,0,0);
+    listacompras comprass = listacompras.obtenerListaCompra();
     CarritoController controllerwindow1;
     Stage stage;
     @FXML
@@ -88,7 +88,7 @@ public class OpenearController implements Initializable {
                JOptionPane.showMessageDialog(null, "NO SE AÑADIERON ARTÍCULOS");
            }else{
                int pagoopenear= n*130;
-               compraf.setPopenear(pagoopenear);
+               comprass.info.setPopenear(pagoopenear);
                 JOptionPane.showMessageDialog(null, "SUS ARTÍCULOS HAN SIDO AÑADIDOS");
                
            }

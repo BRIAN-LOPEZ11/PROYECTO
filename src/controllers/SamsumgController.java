@@ -26,6 +26,7 @@ import javax.swing.JOptionPane;
 public class SamsumgController implements Initializable {
   
 
+    listacompras comprass = listacompras.obtenerListaCompra();
     CarritoController controllerwindow1;
     Stage stage;
     @FXML
@@ -91,6 +92,7 @@ public class SamsumgController implements Initializable {
             } else {
                  pagosamsumg = n * 100;
                  
+                 comprass.info.setPsamsumg(pagosamsumg);
 
                 JOptionPane.showMessageDialog(
                         null, "SUS ARTÍCULOS HAN SIDO AÑADIDOS");
