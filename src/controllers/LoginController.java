@@ -19,6 +19,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -26,7 +27,10 @@ import javafx.stage.Stage;
  * @author Brian
  */
 public class LoginController implements Initializable {
+
     Stage stage;
+
+    
 
     @FXML
     private TextField txtuser;
@@ -42,21 +46,23 @@ public class LoginController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+
+    }
 
     @FXML
     private void showWindow2(ActionEvent event) throws IOException {
-        FXMLLoader loader  = new FXMLLoader(getClass().getResource("/views/carrito.fxml"));
-       Parent root = loader.load();
        
-       CarritoController controller = loader.getController();
-       Scene scene = new Scene(root);
-       Stage stage = new Stage();
-       stage.setScene(scene);
-       controller.init(txtuser.getText(), stage, this);
-       stage.show();
-       this.stage.close();
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/carrito.fxml"));
+                Parent root = loader.load();
+
+                CarritoController controller = loader.getController();
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.setScene(scene);
+                controller.init(txtuser.getText(), stage, this);
+                stage.show();
+                this.stage.close();
+           
     }
 
     public void setStage(Stage primaryStage) {
@@ -69,16 +75,16 @@ public class LoginController implements Initializable {
 
     @FXML
     private void viewregistro(MouseEvent event) throws IOException {
-        FXMLLoader loader  = new FXMLLoader(getClass().getResource("/views/RegistroSB.fxml"));
-       Parent root = loader.load();
-       
-       RegistroSBController controller = loader.getController();
-       Scene scene = new Scene(root);
-       Stage stage = new Stage();
-       stage.setScene(scene);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/RegistroSB.fxml"));
+        Parent root = loader.load();
+
+        RegistroSBController controller = loader.getController();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
         controller.init(txtuser.getText(), stage, this);
-       stage.show();
-       this.stage.close();
+        stage.show();
+        this.stage.close();
     }
-    
+
 }

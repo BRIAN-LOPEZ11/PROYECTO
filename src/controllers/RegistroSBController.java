@@ -13,7 +13,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import listas.*;
+
 
 /**
  * FXML Controller class
@@ -21,6 +21,8 @@ import listas.*;
  * @author Brian
  */
 public class RegistroSBController implements Initializable {
+    
+    
 
     LoginController controllerwindow1;
     Stage stage;
@@ -32,6 +34,7 @@ public class RegistroSBController implements Initializable {
     private PasswordField txtcontraseña;
     
     
+   
     
     
        
@@ -62,6 +65,7 @@ public class RegistroSBController implements Initializable {
 
     @FXML
     private void RegistrarUser(ActionEvent event) {
+        
        
         
     }
