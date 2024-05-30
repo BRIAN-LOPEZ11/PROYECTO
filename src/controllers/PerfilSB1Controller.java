@@ -17,11 +17,11 @@ import javafx.stage.Stage;
  *
  * @author Brian
  */
-public class PerfilSBController implements Initializable {
-    SamsumgController controllerwindow1;
+public class PerfilSB1Controller implements Initializable {
+
+    OpenearController controllerwindow1;
     
     Stage stage;
-
     @FXML
     private TextField txtuser;
     @FXML
@@ -37,20 +37,16 @@ public class PerfilSBController implements Initializable {
         // TODO
     }    
 
-    void init(String text, Stage stage, SamsumgController SamsumgController) {
-        this.controllerwindow1 = SamsumgController;
-        this.stage = stage;
-    }
-   
-
     @FXML
     private void viewproducto(MouseEvent event) {
-        
         controllerwindow1.show();
         
         stage.close();
     }
 
+    void init(String text, Stage stage, OpenearController OpenearController) {
+        this.controllerwindow1 = OpenearController;
+        this.stage = stage;
+    }
     
-   
 }

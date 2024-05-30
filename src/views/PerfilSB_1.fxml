@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="366.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PerfilSB1Controller">
+   <children>
+      <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#viewproducto" pickOnBounds="true" preserveRatio="true" style="-fx-effect: cyan;">
+         <image>
+            <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.03.49_7bccd081.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="213.0" prefHeight="17.0" prefWidth="160.0" text="Nombre">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="282.0" prefHeight="17.0" prefWidth="160.0" text="Genero">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="339.0" prefHeight="17.0" prefWidth="160.0" text="Email">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="403.0" prefHeight="17.0" prefWidth="160.0" text="Contraseña">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtuser" layoutX="40.0" layoutY="242.0" prefHeight="25.0" prefWidth="175.0" style="-fx-border-radius: 12px; -fx-background-radius: 12px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtuser1" layoutX="40.0" layoutY="305.0" prefHeight="25.0" prefWidth="175.0" style="-fx-border-radius: 12px; -fx-background-radius: 12px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtuser11" layoutX="38.0" layoutY="369.0" prefHeight="25.0" prefWidth="175.0" style="-fx-border-radius: 12px; -fx-background-radius: 12px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField layoutX="38.0" layoutY="437.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 12px;" />
+      <ImageView fitHeight="157.0" fitWidth="160.0" layoutX="102.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: cyan;">
+         <image>
+            <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-27%20a%20las%2015.49.03_4212e865.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="151.0" layoutY="43.0" prefHeight="17.0" prefWidth="71.0" text="Perfil">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
