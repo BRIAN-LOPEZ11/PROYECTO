@@ -122,5 +122,19 @@ public class CarritoController implements Initializable {
        stage.show();
        this.stage.close();
     }
+
+    @FXML
+    private void viewcompraf(MouseEvent event) throws IOException {
+        FXMLLoader loader  = new FXMLLoader(getClass().getResource("/views/Compra.fxml"));
+       Parent root = loader.load();
+       
+       CompraController controller = loader.getController();
+       Scene scene = new Scene(root);
+       Stage stage = new Stage();
+       stage.setScene(scene);
+       controller.init(lbluser.getText(), stage, this);
+       stage.show();
+       this.stage.close();
+    }
     
 }

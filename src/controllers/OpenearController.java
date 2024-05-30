@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -23,7 +24,8 @@ import javafx.stage.Stage;
  * @author Brian
  */
 public class OpenearController implements Initializable {
-
+    
+    COMPRAS compraf = new COMPRAS(0,0,0,0);
     CarritoController controllerwindow1;
     Stage stage;
     @FXML
@@ -73,6 +75,26 @@ public class OpenearController implements Initializable {
 
     @FXML
     private void viewcompraf(MouseEvent event) {
+    }
+
+    @FXML
+    private void AgregarCarritoOpenear(ActionEvent event) {
+        int r = JOptionPane.showConfirmDialog(null,"DESEA AÑADIR OPENEAR AL CARRITO",
+                "confirmation",JOptionPane.YES_NO_OPTION);
+        if(r==JOptionPane.YES_OPTION){
+           int n;
+           n =Integer.parseInt(JOptionPane.showInputDialog("Cuantos desea añadir"));
+           if(n == 0){
+               JOptionPane.showMessageDialog(null, "NO SE AÑADIERON ARTÍCULOS");
+           }else{
+               int pagoopenear= n*130;
+               compraf.setPopenear(pagoopenear);
+                JOptionPane.showMessageDialog(null, "SUS ARTÍCULOS HAN SIDO AÑADIDOS");
+               
+           }
+        }else if (r==JOptionPane.NO_OPTION){
+            JOptionPane.showMessageDialog(null, "NO SE AÑADIERON ARTÍCULOS");
+        }
     }
 
 }

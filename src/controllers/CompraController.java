@@ -9,28 +9,26 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
  *
  * @author Brian
  */
-public class RegistroSBController implements Initializable {
+public class CompraController implements Initializable {
 
-    listausuarios usuarios = listausuarios.obtenerListaUsuarios();
-
-    LoginController controllerwindow1;
+  COMPRAS compraf;
+    CarritoController controllerwindow1;
     Stage stage;
     @FXML
-    private TextField txtuser;
+    private ImageView regreso;
     @FXML
-    private TextField txtcorreo;
-    @FXML
-    private PasswordField txtcontraseña;
+    private Label txtuser;
 
     /**
      * Initializes the controller class.
@@ -38,26 +36,24 @@ public class RegistroSBController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }
-
-    void init(String text, Stage stage, LoginController LoginController) {
-
-        this.controllerwindow1 = LoginController;
-        this.stage = stage;
-
-    }
+    }    
 
     @FXML
-    private void showlogin(MouseEvent event) {
+    private void viewcarrito(MouseEvent event) {
         controllerwindow1.show();
         stage.close();
     }
 
-    @FXML
-    private void RegistrarUser(ActionEvent event) {
-
-        usuarios.setAddI(txtuser, txtcorreo, txtcontraseña);
-        
+    void init(String text, Stage stage, CarritoController CarritoController ) {
+        txtuser.setText(text);
+        this.controllerwindow1 = CarritoController;
+        this.stage = stage;
     }
 
+    @FXML
+    private void mostrarcompras(ActionEvent event) {
+        JOptionPane.showMessageDialog(null, "OPENEAR: "+compraf.getPopenear()+"\n SAMSUMG: "+compraf.getPsamsumg());
+    }
+    
+    
 }

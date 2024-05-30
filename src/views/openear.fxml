@@ -102,7 +102,7 @@
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-27%20a%20las%2015.49.03_462a327e.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="243.0" layoutY="314.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: orange; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="Agregar al carrito" />
+      <Button layoutX="243.0" layoutY="314.0" mnemonicParsing="false" onAction="#AgregarCarritoOpenear" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: orange; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="Agregar al carrito" />
       <Label layoutX="47.0" layoutY="336.0" text="\$US130">
          <effect>
             <Blend />

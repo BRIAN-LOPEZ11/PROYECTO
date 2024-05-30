@@ -30,6 +30,7 @@ public class listausuarios {
         }
         return lista;
     }
+     
      public boolean getEsVacia() {
         return cab == null ? true : false;
     }

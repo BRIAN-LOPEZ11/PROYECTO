@@ -87,7 +87,7 @@
                   <Font name="Arial Rounded MT Bold" size="13.0" />
                </font>
             </Label>
-            <Button layoutX="235.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: orange; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="Agregar al carrito" />
+            <Button layoutX="235.0" layoutY="315.0" mnemonicParsing="false" onAction="#AgregarcarritoSamsumg" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: orange; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="Agregar al carrito" />
             <Label layoutX="63.0" layoutY="337.0" text="\$US200">
                <effect>
                   <Blend />

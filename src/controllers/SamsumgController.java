@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 /**
  * FXML Controller class
@@ -23,6 +24,7 @@ import javafx.stage.Stage;
  * @author Brian
  */
 public class SamsumgController implements Initializable {
+  
 
     CarritoController controllerwindow1;
     Stage stage;
@@ -48,6 +50,7 @@ public class SamsumgController implements Initializable {
         this.controllerwindow1 = CarritoController;
         this.stage = stage;
     }
+
     void show() {
         stage.show();
     }
@@ -75,5 +78,30 @@ public class SamsumgController implements Initializable {
     private void viewcompra(MouseEvent event) {
     }
 
+    @FXML
+    private void AgregarcarritoSamsumg(ActionEvent event) {
+        int pagosamsumg;
+        int r = JOptionPane.showConfirmDialog(null, "DESEA AÑADIR CELULAR SAMSUMG AL CARRITO",
+                "confirmation", JOptionPane.YES_NO_OPTION);
+        if (r == JOptionPane.YES_OPTION) {
+            int n;
+            n = Integer.parseInt(JOptionPane.showInputDialog("Cuantos desea añadir"));
+            if (n == 0) {
+                JOptionPane.showMessageDialog(null, "NO SE AÑADIERON ARTÍCULOS");
+            } else {
+                 pagosamsumg = n * 100;
+                 
+
+                JOptionPane.showMessageDialog(
+                        null, "SUS ARTÍCULOS HAN SIDO AÑADIDOS");
+            }
+        } else if (r == JOptionPane.NO_OPTION) {
+            JOptionPane.showMessageDialog(null, "NO SE AÑADIERON ARTÍCULOS");
+        
+        }
+       
+    }
+    
+    
 
 }
