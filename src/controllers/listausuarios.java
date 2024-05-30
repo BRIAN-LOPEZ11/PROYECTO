@@ -93,6 +93,35 @@ public class listausuarios {
             return false;
         }
     }
+       public void setAddI(
+            TextField txtuser,
+            TextField txtcorreo,
+            PasswordField txtcontraseña
+    ) {
+        getCrearNodo(txtuser, txtcorreo, txtcontraseña);
+        if (info != null) {
+            if (cab == null) {
+                cab = info;
+                JOptionPane.showMessageDialog(null,
+                        "Se ha registrado el nodo a la lista, "
+                        + "la lista estaba vacía.");
+                txtcorreo.setText("");
+                txtuser.setText("");
+                txtcontraseña.setText("");
+                txtuser.requestFocus();
+            } else {
+                info.sig = cab;
+                cab = info;
+                JOptionPane.showMessageDialog(null,
+                        "Se ha registrado el nodo al principio "
+                        + "de la lista.");
+                txtcorreo.setText("");
+                txtuser.setText("");
+                txtcontraseña.setText("");
+                txtuser.requestFocus();
+            }
+        }
+    }
      
 
 }
