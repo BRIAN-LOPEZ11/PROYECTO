@@ -53,9 +53,14 @@ public class CompraController implements Initializable {
 
     @FXML
     private void mostrarcompras(ActionEvent event) {
-        
-        JOptionPane.showMessageDialog(null, "OPENEAR: "+comprass.info.getPopenear()+"\n SAMSUMG: "+comprass.info.getPsamsumg()+"\n PLAYSTATION: "+comprass.info.getPplaystation()+"\n LAPTOP: ");
-    }
     
+        
+        JOptionPane.showMessageDialog(null, "OPENEAR: "+comprass.info.getPopenear()+
+                "\n SAMSUMG: "+comprass.info.getPsamsumg()+
+                "\n PLAYSTATION: "+comprass.info.getPplaystation()+
+                "\n LAPTOP: "+comprass.info.getPlatop());
+                int pagototal = comprass.info.getPsamsumg()+comprass.info.getPopenear()+comprass.info.getPplaystation()+comprass.info.getPlatop();
+                JOptionPane.showMessageDialog(null,"VALOR TOTAL A PAGAR: "+pagototal+"$");
+    }
     
 }

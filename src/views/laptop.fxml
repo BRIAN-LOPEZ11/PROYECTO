@@ -89,7 +89,10 @@
                   <Font name="Arial Rounded MT Bold" size="13.0" />
                </font>
             </Label>
-            <Button layoutX="238.0" layoutY="303.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: orange; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="Agregar al carrito" />
+            <Button layoutX="238.0" layoutY="303.0" mnemonicParsing="false" onAction="#AgregarcarritoLaptop" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: orange; -fx-text-fill: WHITE; -fx-border-radius: 12px; -fx-background-radius: 10px;" text="Agregar al carrito">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
             <Label layoutX="147.0" layoutY="307.0" prefHeight="17.0" prefWidth="23.0" text="5.0">
                <effect>
                   <Blend />
