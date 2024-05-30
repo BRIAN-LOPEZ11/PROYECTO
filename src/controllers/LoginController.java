@@ -29,8 +29,7 @@ import javax.swing.JOptionPane;
 public class LoginController implements Initializable {
 
     Stage stage;
-
-    
+    listausuarios lista = listausuarios.obtenerListaUsuarios();
 
     @FXML
     private TextField txtuser;
@@ -51,7 +50,10 @@ public class LoginController implements Initializable {
 
     @FXML
     private void showWindow2(ActionEvent event) throws IOException {
-       
+        nodo usuario = lista.getBuscarcorreo(txtuser.getText());
+        if (usuario != null) {
+            boolean passCorrect = usuario.contra.equals(txtcontra.getText());
+            if (passCorrect) {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/carrito.fxml"));
                 Parent root = loader.load();
 
@@ -62,7 +64,13 @@ public class LoginController implements Initializable {
                 controller.init(txtuser.getText(), stage, this);
                 stage.show();
                 this.stage.close();
-           
+            } else {
+                JOptionPane.showMessageDialog(null, "Contraseña incorrecta");
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "No se encontro el usuario");
+        }
+
     }
 
     public void setStage(Stage primaryStage) {
