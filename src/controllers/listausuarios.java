@@ -33,6 +33,19 @@ public class listausuarios {
      public boolean getEsVacia() {
         return cab == null ? true : false;
     }
+     public int getLongLista() {
+        if (getEsVacia()) {
+            return 0;
+        } else {
+            nodo p = cab;
+            int cont = 0;
+            while (p != null) {
+                cont++;
+                p = p.sig;
+            }
+            return cont;
+        }
+    }
      
 
 }
