@@ -4,11 +4,15 @@
  */
 package controllers;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -50,6 +54,9 @@ public class LaptopController implements Initializable {
         this.stage = stage;
 
     }
+    void show() {
+        stage.show();
+    }
 
     @FXML
     private void AgregarcarritoLaptop(ActionEvent event) {
@@ -69,6 +76,19 @@ public class LaptopController implements Initializable {
         } else if (r == JOptionPane.NO_OPTION) {
             JOptionPane.showMessageDialog(null, "NO SE AÑADIERON ARTÍCULOS");
         }
+    }
+
+    @FXML
+    private void viewperfil(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/PerfilSB_3.fxml"));
+        Parent root = loader.load();
+        PerfilSB3Controller controller = loader.getController();
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        controller.init(txtuser.getText(), stage, this);
+        stage.show();
+        this.stage.close();
     }
     
 
