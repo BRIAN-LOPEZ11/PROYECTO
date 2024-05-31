@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -19,15 +20,17 @@ import javafx.stage.Stage;
  */
 public class PerfilSB3Controller implements Initializable {
 
+    listausuarios usuarios = listausuarios.obtenerListaUsuarios();
+
     LaptopController controllerwindow1;
 
     Stage stage;
     @FXML
-    private TextField txtuser;
+    private Label lbluser;
     @FXML
-    private TextField txtuser1;
+    private Label lblcorreo;
     @FXML
-    private TextField txtuser11;
+    private Label lblcontra;
 
     /**
      * Initializes the controller class.
@@ -40,14 +43,16 @@ public class PerfilSB3Controller implements Initializable {
     @FXML
     private void viewproducto(MouseEvent event) {
         controllerwindow1.show();
-        
+
         stage.close();
     }
-    
 
     void init(String text, Stage stage, LaptopController LaptopController) {
         this.controllerwindow1 = LaptopController;
         this.stage = stage;
+        lbluser.setText(usuarios.info.nombre);
+        lblcorreo.setText(usuarios.info.correo);
+        lblcontra.setText(usuarios.info.contra);
     }
 
 }

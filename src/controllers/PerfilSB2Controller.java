@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -20,14 +21,15 @@ import javafx.stage.Stage;
 public class PerfilSB2Controller implements Initializable {
 
     PlaystationController controllerwindow1;
-    
+    listausuarios usuarios = listausuarios.obtenerListaUsuarios();
+
     Stage stage;
     @FXML
-    private TextField txtuser;
+    private Label lbluser;
     @FXML
-    private TextField txtuser1;
+    private Label lblcorreo;
     @FXML
-    private TextField txtuser11;
+    private Label lblcontra;
 
     /**
      * Initializes the controller class.
@@ -35,20 +37,22 @@ public class PerfilSB2Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void viewproducto(MouseEvent event) {
         controllerwindow1.show();
-        
+
         stage.close();
     }
 
     void init(String text, Stage stage, PlaystationController PlaystationController) {
-                this.controllerwindow1 = PlaystationController;
+        this.controllerwindow1 = PlaystationController;
         this.stage = stage;
+        lbluser.setText(usuarios.info.nombre);
+        lblcorreo.setText(usuarios.info.correo);
+        lblcontra.setText(usuarios.info.contra);
 
     }
 
-    
 }
