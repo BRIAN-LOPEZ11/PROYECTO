@@ -90,6 +90,12 @@ public class LaptopController implements Initializable {
         stage.show();
         this.stage.close();
     }
+
+    @FXML
+    private void viewcasa(MouseEvent event) {
+        controllerwindow1.show();
+        stage.close();
+    }
     
 
 }

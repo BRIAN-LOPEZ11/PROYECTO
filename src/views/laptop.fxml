@@ -37,11 +37,14 @@
             <Label layoutX="66.0" layoutY="388.0" prefHeight="17.0" prefWidth="260.0" text=" ● 6 GB de RAM DDR4 de 3200 MHz(2 x 8 GB)" />
             <Label layoutX="66.0" layoutY="414.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Lector de tarjetas digitales multiformato HP" />
             <Label layoutX="66.0" layoutY="440.0" prefHeight="17.0" prefWidth="271.0" text=" ● Adaptador de alimentación de CA de 65 W, USB Tipo C" />
-            <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="39.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="66.0" layoutY="509.0" onMouseClicked="#viewcasa" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c578ce0e.jpg" />
-               </image></ImageView>
-            <ImageView fitHeight="41.0" fitWidth="59.0" layoutX="169.0" layoutY="509.0" onMouseClicked="#viewperfil" pickOnBounds="true" preserveRatio="true">
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fitHeight="41.0" fitWidth="59.0" layoutX="261.0" layoutY="509.0" onMouseClicked="#viewperfil" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c7da5c95.jpg" />
                </image>
@@ -51,10 +54,6 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></ImageView>
-            <ImageView fitHeight="41.0" fitWidth="45.0" layoutX="304.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_f364a62d.jpg" />
-               </image></ImageView>
             <ImageView fx:id="regreso" fitHeight="62.0" fitWidth="59.0" layoutY="8.0" onMouseClicked="#viewcarrito" pickOnBounds="true">
                <image>
                   <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.03.49_7bccd081.jpg" />
@@ -71,15 +70,7 @@
                   <ColorAdjust contrast="-0.73" />
                </effect>
             </ImageView>
-            <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="93.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
-               <image>
-                  <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
-               </image>
-               <effect>
-                  <ColorAdjust contrast="-0.8" hue="0.99" saturation="0.31" />
-               </effect>
-            </ImageView>
-            <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="228.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
+            <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="157.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
                <image>
                   <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
                </image>

@@ -36,7 +36,7 @@
       <Label layoutX="38.0" layoutY="406.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Asistencia de voz integrado (SIRI)" />
       <Label layoutX="38.0" layoutY="431.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Micrófono incorporado" />
       <Label layoutX="38.0" layoutY="458.0" prefHeight="17.0" prefWidth="260.0" text=" ●  Sonido superior y sin limites" />
-      <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="39.0" layoutY="509.0" onMouseClicked="#viewcarrito" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="80.0" layoutY="509.0" onMouseClicked="#viewcarrito" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c578ce0e.jpg" />
          </image>
@@ -44,17 +44,9 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="41.0" fitWidth="59.0" layoutX="168.0" layoutY="509.0" onMouseClicked="#viewperfil" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="41.0" fitWidth="59.0" layoutX="243.0" layoutY="509.0" onMouseClicked="#viewperfil" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_c7da5c95.jpg" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <ImageView fitHeight="41.0" fitWidth="45.0" layoutX="291.0" layoutY="509.0" onMouseClicked="#viewcompraf" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.15.23_f364a62d.jpg" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -76,15 +68,7 @@
             <ColorAdjust contrast="-0.73" />
          </effect>
       </ImageView>
-      <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="93.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
-         <image>
-            <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
-         </image>
-         <effect>
-            <ColorAdjust contrast="-0.73" />
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="228.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
+      <ImageView fitHeight="4.0" fitWidth="69.0" layoutX="151.0" layoutY="528.0" pickOnBounds="true" rotate="-90.0">
          <image>
             <Image url="@../images/Imagen%20de%20WhatsApp%202024-05-10%20a%20las%2001.17.29_4934f1d5.jpg" />
          </image>

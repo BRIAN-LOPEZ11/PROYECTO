@@ -87,5 +87,11 @@ public class PlaystationController implements Initializable {
         this.stage.close();
     }
 
+    @FXML
+    private void viewcasa(MouseEvent event) {
+        controllerwindow1.show();
+        stage.close();
+    }
+
     
 }
